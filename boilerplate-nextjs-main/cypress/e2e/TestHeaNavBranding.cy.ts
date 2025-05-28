@@ -1,6 +1,6 @@
 describe('ProtecNow - Header e Navegação', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3001');
+    cy.visit('http://localhost:3002');
   });
 
   it('Deve mostrar o nome da marca no header', () => {
