@@ -3,50 +3,34 @@ import { Service } from "@/types/example";
 export const services: Service[] = [
   {
     nome: "Seguro Básico",
-    descricao: "Proteção essencial para seu veículo com cobertura fundamental e atendimento de qualidade.",
+    descricao: "Proteção essencial para seu veículo com cobertura fundamental.",
     imagem: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=400&q=80",
     categoria: "Básico",
     preco: 89.90,
     cobertura: ["Terceiros", "Incêndio", "Roubo e furto", "Guincho 24h"],
   },
   {
-    nome: "Proteção Premium",
-    descricao: "Cobertura completa e exclusiva.",
+    nome: "Seguro Completo",
+    descricao: "Cobertura ampla e completa para máxima tranquilidade.",
+    imagem: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=400&q=80",
+    categoria: "Completo",
+    preco: 159.90,
+    cobertura: ["Cobertura total", "Carro reserva", "Vidros", "Assistência 24h"],
+  },
+  {
+    nome: "Seguro Premium",
+    descricao: "O mais completo seguro com benefícios exclusivos.",
+    imagem: "/SeguroPremium.jpg",
     categoria: "Premium",
-    preco: 199.90,
-    imagem: "/images/protecao-premium.jpg",
-    cobertura: [
-      "Proteção contra roubo e furto",
-      "Assistência 24h completa",
-      "Cobertura contra incêndio",
-      "Vidros e faróis cobertos",
-      "Carro reserva premium"
-    ]
+    preco: 229.90,
+    cobertura: ["Tudo incluso", "Concierge", "Proteção total", "Sem franquia"],
   },
   {
-    nome: "Proteção Total",
-    descricao: "Nosso plano mais completo com cobertura nacional e sem burocracia.",
-    imagem: "https://images.unsplash.com/photo-1605034343210-24dd57ce0f58?auto=format&fit=crop&w=400&q=80",
-    categoria: "Total",
-    preco: 259.90,
-    cobertura: [
-      "Cobertura nacional",
-      "Sem análise de perfil",
-      "Carro reserva ilimitado",
-      "Cobertura de terceiros ampliada"
-    ]
+    nome: "Seguro Moto",
+    descricao: "Proteção especializada para motocicletas e scooters.",
+    imagem: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=400&q=80",
+    categoria: "Moto",
+    preco: 49.90,
+    cobertura: ["Terceiros", "Roubo", "Equipamentos", "Assistência"],
   },
-  {
-    nome: "Plano Econômico",
-    descricao: "Ideal para quem quer proteção com um excelente custo-benefício.",
-    imagem: "https://images.unsplash.com/photo-1597007517935-81c17a6fe245?auto=format&fit=crop&w=400&q=80",
-    categoria: "Econômico",
-    preco: 69.90,
-    cobertura: [
-      "Cobertura contra roubo",
-      "Guincho 100 km",
-      "Assistência básica",
-      "App de acompanhamento"
-    ]
-  }
 ];
