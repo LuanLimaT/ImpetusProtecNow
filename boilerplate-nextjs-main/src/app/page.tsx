@@ -8,10 +8,11 @@ import Testimonials from "./Home/Testimonials";
 import Footer from "./Home/Footer";
 import FloatingChat from "./Home/FloatingChat";
 import CheckoutModal from "./Home/CheckoutModal";
-console.log("CheckoutModal:", CheckoutModal);
+
 
 import { services } from "@/constants/services";
 import { Service } from "@/types/example";
+import Header from "@/shared/Header/Header";
 
 export default function HomePage() {
   const [selectedService, setSelectedService] = useState<Service | null>(null);
@@ -29,6 +30,7 @@ export default function HomePage() {
 
   return (
     <div>
+      <Header />
       <Hero />
       <About />
       <Services services={services} onServiceBuy={handleServiceBuy} />

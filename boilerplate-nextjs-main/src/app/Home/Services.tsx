@@ -1,4 +1,3 @@
-// app/(home)/Home/Services.tsx
 "use client";
 import { ShoppingCart, CheckCircle } from "lucide-react";
 import { Service } from "@/types/example";
