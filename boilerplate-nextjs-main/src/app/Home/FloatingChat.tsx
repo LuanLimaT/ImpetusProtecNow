@@ -42,7 +42,7 @@ export default function FloatingChat() {
   useEffect(() => {
     if (!chatOpen) return
 
-    const SOCKET_SERVER_URL = "http://localhost:3001"
+    const SOCKET_SERVER_URL = "https://socket-server-1-jamh.onrender.com/"
 
     if (!socketRef.current) {
       console.log("Conectando ao servidor Socket.IO:", SOCKET_SERVER_URL)
