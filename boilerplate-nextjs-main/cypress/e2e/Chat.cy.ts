@@ -1,6 +1,6 @@
 describe('ProtecNow - Chat Flutuante', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3001');
+    cy.visit('https://socket-server-1-jamh.onrender.com/');
   });
 
   it('Abre o chat flutuante', () => {
