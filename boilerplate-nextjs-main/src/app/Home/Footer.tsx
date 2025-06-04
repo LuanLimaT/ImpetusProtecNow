@@ -1,11 +1,10 @@
-
-"use client";
-import { Shield, Phone, Mail, MapPin, Heart } from "lucide-react";
-import React from "react";
+"use client"
+import { Shield, Phone, Mail, MapPin } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
-  <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
@@ -15,25 +14,36 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center gap-2">
               <Shield className="w-8 h-8 text-blue-400" />
-              <h4 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">ProtecNow</h4>
+              <h4 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                ProtecNow
+              </h4>
             </div>
             <p className="text-slate-300 leading-relaxed">
-              Sua segurança é nossa prioridade. Proteção veicular completa e confiável 
-              com tecnologia de ponta e atendimento humanizado.
+              Sua segurança é nossa prioridade. Proteção veicular completa e confiável com tecnologia de ponta e
+              atendimento humanizado.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-blue-600/20 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-blue-600/20 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+              >
                 📘
               </a>
-              <a href="#" className="w-10 h-10 bg-purple-600/20 hover:bg-purple-600 rounded-full flex items-center justify-center transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-purple-600/20 hover:bg-purple-600 rounded-full flex items-center justify-center transition-colors"
+              >
                 📷
               </a>
-              <a href="#" className="w-10 h-10 bg-green-600/20 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-green-600/20 hover:bg-green-600 rounded-full flex items-center justify-center transition-colors"
+              >
                 💬
               </a>
             </div>
           </div>
-          
+
           <div className="space-y-4">
             <h5 className="font-semibold text-white text-lg">Serviços</h5>
             <ul className="space-y-3 text-slate-300">
@@ -44,7 +54,7 @@ export default function Footer() {
               <li className="hover:text-blue-400 transition-colors cursor-pointer">Carro Reserva</li>
             </ul>
           </div>
-          
+
           <div className="space-y-4">
             <h5 className="font-semibold text-white text-lg">Contato</h5>
             <ul className="space-y-3 text-slate-300">
@@ -62,12 +72,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div className="space-y-4">
             <h5 className="font-semibold text-white text-lg">Newsletter</h5>
-            <p className="text-slate-300 text-sm">
-              Receba dicas de segurança e ofertas exclusivas
-            </p>
+            <p className="text-slate-300 text-sm">Receba dicas de segurança e ofertas exclusivas</p>
             <div className="flex gap-2">
               <input
                 type="email"
@@ -80,15 +88,26 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-slate-700 pt-8 text-center">
-          <p className="text-slate-400">
-            &copy; {new Date().getFullYear()} ProtecNow Seguradora. Todos os direitos reservados. 
-            <span className="mx-2">•</span>
-            Feito com <Heart className="w-4 h-4 inline text-red-400 fill-current" /> para sua segurança
+          <p className="text-slate-400 flex items-center justify-center flex-wrap gap-2">
+            &copy; {new Date().getFullYear()} ProtecNow Seguradora. Todos os direitos reservados.
+            <span className="hidden sm:inline">•</span>
+            <span className="flex items-center gap-2">
+              Feito com
+              <Image
+                src="/FundoAzulEscuro.svg"
+                alt="Logo IMPTUS"
+                width={80}
+                height={32}
+                className="inline-block"
+                style={{ filter: "brightness(1.2)" }}
+              />
+              para sua segurança
+            </span>
           </p>
         </div>
       </div>
     </footer>
-  );
+  )
 }
